@@ -1,3 +1,11 @@
+"""
+Reject List Cleaner
+
+This script removes rejected email addresses from Excel mailing lists based on
+a predefined reject list. It is designed to automate email list maintenance tasks.
+
+Developed during internship work using anonymized data.
+"""
 import pandas as pd
 import tkinter as tk
 from tkinter import messagebox, ttk
@@ -114,3 +122,4 @@ reject_sheet_dropdown.pack(padx=10, pady=2)
 tk.Button(root, text="Run Cleaning", command=process_cleaning).pack(pady=10)
 
 root.mainloop()
+
