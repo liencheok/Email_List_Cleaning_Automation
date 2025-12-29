@@ -1,3 +1,13 @@
+"""
+Undelivered Email Cleaner
+
+This script automates the identification and extraction of undelivered email addresses
+from Excel mailing lists. It moves matched entries to a reject list and highlights
+affected rows for review.
+
+Developed during internship work using anonymized data.
+"""
+
 import pandas as pd
 import re
 import tkinter as tk
@@ -172,3 +182,4 @@ content_textbox.pack(padx=10, pady=5)
 tk.Button(root, text="Process Emails", command=process_emails).pack(pady=10)
 
 root.mainloop()
+
